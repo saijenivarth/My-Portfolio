@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: #000; 
+}
+
+.main{
+    width: 100%;
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+    color: rgb(249, 199, 108);
+    
+}
+
+.navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    font-size: 30px;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    width: 160px;
+    cursor: pointer;
+    margin-top: -3%;
+    margin-left: 2%;
+}
+
+ul{
+    margin-top: 0%;
+    margin-right: 5%;
+}
+
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255,181,0);
+    margin-top: -3%;
+    transition: .4s ease;
+
+}
+
+ul li a:hover{
+    color: rgb(246, 241, 240);
+}
+ 
+
+.info{
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+.info h1{
+    font-size: 65px;
+    color: rgb(249, 244, 244);
+}
+
+.info h3{
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: 24px;
+}
+.info h4{
+    font-size: 23px;
+    color: #fff;
+}
+
+
+.info span{
+    color: rgb(255,181,0);
+}
+
+.button{
+    text-decoration:  none;
+    color: #fff;
+    background: rgb(36,32,30);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.button:hover{
+    background: rgb(255,181,0);
+}
+
+ 
+
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.image img{
+    position: absolute;
+    height: 140%;
+    left: 40%;
+    transform: translate(-55%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.image:hover .boy{
+    left: 55%;
+}
+
+
+.icons{
+
+    margin-left: 6rem;
+}
+.icons a{
+    margin-left: 15px;
+    font-size: 2.5rem;
+}
+
+.icons .bxl-facebook-circle:hover{
+    color:#526eff !important;
+}
+
+.icons .bxl-instagram:hover{
+    color:#ff0077 !important;
+}
+
+.icons .bxl-twitter:hover{
+    color:#00d5ff !important;
+}
+.icons .bxl-linkedin-square:hover{
+    color:#054976 !important;
+}
+
+.skills {
+    text-align: center;
+    padding: 40px;
+    
+}
+.skills h2 {
+    font-size: 30px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.skill-category {
+    display: flex;
+  
+     flex-wrap: wrap; 
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+/* Style the skill icons/badges */
+.skill-icon {
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    
+    box-shadow: 0px 0px 10px rgba(245, 243, 243, 0.1);
+    transition: animation 1s ease;
+}
+
+.skill-icon:hover {
+    /* transform: scale(1.05); */
+    /* transform: rotate(360deg); */
+    animation: rotate 2s ease;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.skill-icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* Style the skill details and progress bar */
+.skill-details p {
+    font-size: 14px;
+}
+
+.skill-progress {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.progress-bar {
+    background-color: #007acc;
+    height: 100%;
+    border-radius: 5px;
+}
+ 
+.skills h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+/* Skill icon styles for the new section */
+.skill-icon[data-skill="Creative Thinking"],
+.skill-icon[data-skill="Problem-Solving"],
+.skill-icon[data-skill="Analytical Skills"] {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    margin-top: 40px;
+      
+}
+.AS{
+    display: flex;flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+     
+}
+
+/* Style the new skill icons */
+.skill-icon[data-skill="Creative Thinking"] img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.skill-icon[data-skill="Problem-Solving"] img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.skill-icon[data-skill="Analytical Skills"] img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+/* Style the new skill details and progress bars */
+.skill-icon[data-skill="Creative Thinking"] .skill-details p {
+    font-size: 14px;
+}
+
+.skill-icon[data-skill="Problem-Solving"] .skill-details p {
+    font-size: 14px;
+}
+
+.skill-icon[data-skill="Analytical Skills"] .skill-details p {
+    font-size: 14px;
+}
+
+.skill-icon[data-skill="Creative Thinking"] .skill-progress,
+.skill-icon[data-skill="Problem-Solving"] .skill-progress,
+.skill-icon[data-skill="Analytical Skills"] .skill-progress {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-icon[data-skill="Creative Thinking"] .progress-bar,
+.skill-icon[data-skill="Problem-Solving"] .progress-bar,
+.skill-icon[data-skill="Analytical Skills"] .progress-bar {
+    background-color: #007acc;
+    height: 100%;
+    border-radius: 5px;
+}
+
+ 
+.projects {
+    text-align: center;
+    padding: 20px;
+    color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#hd2{
+    color: #fff;
+    margin-top: 8rem;
+    font-size: 46px;
+    font-weight: 700;
+    text-align: center;
+}
+/* Style the project cards */
+.project-card {
+    background-color: #f5f5f590;
+    padding: 20px; /* Reduce padding to make the cards smaller */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    margin: 20px; /* Add margin for spacing */
+    width: 25%;
+    height: 80%;
+    margin-left: 4rem;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+ 
+.project-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;  
+    height: auto;  
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.project-card img {
+    width: 80%;  
+    height: auto;  
+    display: block;
+    margin: 0 auto;  
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #fff;  
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #fff;  
+}
+
+
+
+.contact {
+    text-align: center;
+    padding: 20px;
+    margin-top: 6rem;
+     
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #050505;
+}
+
+.contact h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.contact-form { 
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(244, 237, 237, 0.942);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(235, 233, 233, 0.753);
+}
+
+.contact-form form {
+    text-align: left;
+     
+    
+
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+     
+    border-radius: 5px;
+    font-size: 16px;
+}
+ 
+
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0d0d0d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: #e99d11;
+}
+
+ 
+
+#lets-connect {
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#lets-connect h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sub-container i {
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.label {
+    font-size: 18px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 32px;
+    color: #119bf7;
+    transition: color 0.2s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #0584e5;
+}
+
+footer{
+    color: white;
+    font-size: large;
+    text-align: center;
+    padding: 3rem;
+}
+
+
+ 
